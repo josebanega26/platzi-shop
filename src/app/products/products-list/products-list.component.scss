@@ -1,0 +1,13 @@
+.products__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+  justify-items: center;
+}
+
+.card{
+    width: 300px;
+    min-height: 475px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

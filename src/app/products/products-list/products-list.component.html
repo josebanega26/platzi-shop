@@ -1,11 +1,13 @@
-<div
-  *ngFor="let product of products; index as i"
->
-<h4>{{product.title}}</h4>
-<img [src]="product.image"
-    style="width: 300px;"
-     alt="">
-<p>{{product.description}}</p>
-<strong>{{product.price}}</strong>
-<button (click)='onBuy(i)'>Buy this</button>
+<div class="products__container">
+  <div  
+  class="card"
+  *ngFor="let product of products; index as i">
+      <h3>{{ product.title }}</h3>
+      <img [src]="product.image"
+      class="img-fluid" alt="" />
+      <p>{{ product.description }}</p>
+      <strong>{{ product.price }}</strong>
+      <button (click)="onBuy(i)"
+      class="btn btn-success btn-block">Buy this</button>
+  </div>
 </div>
