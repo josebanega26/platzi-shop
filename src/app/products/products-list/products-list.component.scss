@@ -3,7 +3,9 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
   justify-items: center;
 }
-
+.image__container{
+  height: 300px;
+}
 .card{
     width: 300px;
     min-height: 475px;

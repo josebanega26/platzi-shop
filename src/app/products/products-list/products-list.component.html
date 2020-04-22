@@ -2,11 +2,13 @@
   <div  
   class="card"
   *ngFor="let product of products; index as i">
-      <h3>{{ product.title }}</h3>
-      <img [src]="product.image"
-      class="img-fluid" alt="" />
-      <p>{{ product.description }}</p>
-      <strong>{{ product.price }}</strong>
+      <h3 class="ctn">{{ product.title | uppercase }}</h3>
+      <div class="image__container">
+        <img [src]="product.image"
+        class="img-fluid" alt="" />
+      </div>
+      <p>{{ product.description  }}</p>
+      <strong class="ctn">{{ product.price | currency  }}</strong>
       <button (click)="onBuy(i)"
       class="btn btn-success btn-block">Buy this</button>
   </div>
