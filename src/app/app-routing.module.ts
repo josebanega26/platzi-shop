@@ -14,10 +14,15 @@ const routes: Routes = [
     path: 'contact',
     loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule).catch(err => console.error(err))
   },
+ 
   {
+    path:'admin',
+    loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule).catch(err =>console.error(err))
+  },
+   {
     path: '**',
     component: NotFoundComponent
-  }
+  },
 ];
 
 @NgModule({
