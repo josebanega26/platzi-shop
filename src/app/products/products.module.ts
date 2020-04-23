@@ -4,7 +4,7 @@ import {ProductsComponent} from './components/products/products.component'
 import {ProductDetailComponent} from './components/product-detail/product-detail.component'
 import {ProductsListComponent} from './components/products-list/products-list.component'
 import {ProductsRoutingModule} from './products-routing.module'
-
+import {MaterialModule} from '../material/material.module'
 @NgModule({
   declarations: [
     ProductsListComponent,
@@ -13,7 +13,8 @@ import {ProductsRoutingModule} from './products-routing.module'
   ],
   imports: [
     CommonModule,
-    ProductsRoutingModule
+    ProductsRoutingModule,
+    MaterialModule
   ]
 })
 export class ProductsModule { }
