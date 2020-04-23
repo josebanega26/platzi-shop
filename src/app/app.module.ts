@@ -7,10 +7,10 @@ import { ProductsListComponent } from './products/products-list/products-list.co
 import { ProductsComponent } from './products/products/products.component';
 import { ContactComponent } from './contact/contact.component';
 import { LayoutComponent } from './layout/layout.component';
-import {FooterComponent} from './footer/footer.component'
-import {HeaderComponent} from './header/header.component';
+
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ProductDetailComponent } from './products/product-detail/product-detail.component'
+import {SharedModule} from './shared/shared.module'
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,14 +18,14 @@ import { ProductDetailComponent } from './products/product-detail/product-detail
     ProductsComponent,
     ContactComponent,
     LayoutComponent,
-    HeaderComponent,
-    FooterComponent,
+
     NotFoundComponent,
     ProductDetailComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
