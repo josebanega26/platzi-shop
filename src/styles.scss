@@ -48,7 +48,15 @@ body{
   }
 
 }
-
+.highlight{
+  color: $color-danger;
+  font-size: 5rem
+}
+.justify-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .ctn {
   text-align: center;
 }

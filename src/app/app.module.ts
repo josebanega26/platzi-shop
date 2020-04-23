@@ -10,7 +10,8 @@ import { ContactComponent } from './contact/contact.component';
 import { LayoutComponent } from './layout/layout.component';
 import {FooterComponent} from './footer/footer.component'
 import {HeaderComponent} from './header/header.component';
-import { BannerComponent } from './banner/banner.component'
+import { BannerComponent } from './banner/banner.component';
+import { NotFoundComponent } from './not-found/not-found.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { BannerComponent } from './banner/banner.component'
     LayoutComponent,
     HeaderComponent,
     FooterComponent,
-    BannerComponent
+    BannerComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
