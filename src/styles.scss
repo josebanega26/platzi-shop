@@ -2,6 +2,14 @@
 $color-danger: #e74736;
 $color-success: linear-gradient(270deg,#3eaeca,#38c6ae);
 
+body{
+  margin: 0;
+}
+.section{
+  min-height: 80vh;
+  width: 80%;
+  margin: auto;
+}
 .img-fluid {
   max-width: 100%;
   height: auto;

@@ -1,0 +1,21 @@
+@import '../../styles.scss';
+.header{
+    height: 10vh;
+    background-color: $color-danger;
+    color: white;
+    font-weight: bold;
+
+    nav ,div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    p{
+        cursor: pointer;
+        margin-left: 0.55rem;
+        &:last-child{
+            margin-right: 0.55rem;
+        }
+    }
+}

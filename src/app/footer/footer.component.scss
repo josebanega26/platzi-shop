@@ -1,0 +1,11 @@
+@import '../../styles.scss';
+.footer{
+    margin-top: 0.5rem;
+    height: 10vh;
+    background-color: $color-danger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
