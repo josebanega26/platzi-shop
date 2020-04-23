@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Product} from '../products.model'
-import {ProductService} from '../../core/product.service'
+import {Product} from '../../products.model'
+import {ProductService} from '../../../core/product.service'
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
