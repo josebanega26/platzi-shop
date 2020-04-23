@@ -1,9 +1,12 @@
 <div class="products__container">
   <div  
   class="card"
+  
   *ngFor="let product of products; index as i">
       <h3 class="ctn">{{ product.title | uppercase }}</h3>
-      <div class="image__container">
+      <div 
+      (click)='goToDetail(i)'
+      class="image__container">
         <img [src]="product.image"
         class="img-fluid" alt="" />
       </div>

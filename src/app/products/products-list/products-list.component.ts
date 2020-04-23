@@ -1,5 +1,6 @@
 import { Component, OnInit , Input, Output, EventEmitter } from '@angular/core';
 import {Product} from '../products.model';
+import { Router  } from '@angular/router';
 @Component({
   selector: 'app-products-list',
   templateUrl: './products-list.component.html',
@@ -8,9 +9,14 @@ import {Product} from '../products.model';
 export class ProductsListComponent implements OnInit {
   @Input() products: Product[];
   @Output()addCart: EventEmitter<any> = new EventEmitter(null);
-  constructor() { }
+  constructor(private route: Router) { }
+ 
 
   ngOnInit(): void {
+  }
+
+  goToDetail(id: number){
+    this.route.navigate(['products',id])
   }
 
   onBuy(index: number) {

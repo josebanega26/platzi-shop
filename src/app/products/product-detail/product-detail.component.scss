@@ -1,0 +1,15 @@
+.product__container{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template: "first second second";
+    background-color: #BB342F;
+    border-radius: 10px;
+
+    .image__container{
+        grid-area: first;
+    }
+    .detail__container{
+        grid-area: second;
+    }
+}
