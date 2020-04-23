@@ -1,0 +1,14 @@
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"
+      *ngFor="let image of imagesBanner"
+      >
+          <img 
+          [src]="image"
+           alt="">
+        </div>
+
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
