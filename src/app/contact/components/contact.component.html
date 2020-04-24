@@ -1,3 +1,11 @@
 <div class="section">
-    <p>contact works!</p>
+    <h2>Contact Us</h2>
+
+    <input 
+    [formControl]="emailField"
+    type="text">
+    <div
+    *ngIf="emailField.invalid">
+    Ingrese contrasena entre 10 a 15 caracteres
+    </div>
 </div>
