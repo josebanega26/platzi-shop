@@ -1,5 +1,5 @@
 import { Component , OnInit  } from '@angular/core';
-import {Product} from './products/products.model';
+import { ProductService } from './core/product.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,9 +7,11 @@ import {Product} from './products/products.model';
 })
 export class AppComponent implements OnInit {
 
+  constructor(private productService: ProductService){}
   // @Input
   title = 'platzi-shop';
   
   ngOnInit() {
+    this.productService.fetchProducts()
   }
 }
